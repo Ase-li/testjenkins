@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="37dp"
+    android:paddingRight="37dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:text="2018.01.01"
+        android:textColor="@color/color_ff4e03"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_oval"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/tv_time"
+        android:background="@mipmap/icon_ddxx_02" />
+    <View
+        android:id="@+id/vw_line"
+       android:layout_width="1px"
+        android:layout_height="25dp"
+        android:layout_toEndOf="@+id/tv_time"
+        android:layout_marginStart="42.5dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/color_ff4e03"
+        android:layout_below="@+id/iv_oval"
+        />
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="51dp"
+        android:layout_toEndOf="@+id/iv_oval"
+        android:text="2018.01.01"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp" />
+</RelativeLayout>

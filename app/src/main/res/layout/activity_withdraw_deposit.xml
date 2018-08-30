@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_layout_bank_info" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/bg_white"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="@string/withdraw_to_account_money"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+                <View
+                   android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="11dp" />
+
+                <TextView
+                    android:id="@+id/tv_real_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16.5dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/color_ff4e03"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/bg_white"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="@string/withdraw_charge"
+                    android:textColor="#FF666666"
+                    android:textSize="12sp" />
+
+                <View
+                   android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="11dp" />
+
+                <EditText
+                    android:id="@+id/et_service_charge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16.5dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:text="0.5元"
+                    android:textColor="@color/color_333333"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_asset_handing" />
+
+            <TextView
+                android:id="@+id/tv_balance_next"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="37dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/investment_btn_invest"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/withdraw_next"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_to_account_rule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/withdraw_rule"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_withdraw_rule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/withdraw_rule_detail"
+                    android:textColor="@color/color_999999"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

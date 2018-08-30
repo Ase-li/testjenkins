@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginTop="15dp"
+    android:gravity="center_horizontal"
+    android:text="预期年化结算利率不等于实际投资收益，以实际投资回报为准"
+    android:textColor="@color/color_999999"
+    android:textSize="@dimen/txt_11sp" />

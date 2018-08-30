@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/base_view"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:text="@string/send_sms_phone"
+                android:textColor="@color/bg_main_light_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:text=""
+                android:textColor="@color/color_333333"
+                android:textSize="24sp" />
+
+            <include
+                layout="@layout/ui_verification_code"
+                android:layout_width="278dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="33dp" />
+
+            <include layout="@layout/ui_set_password" />
+
+            <TextView
+                android:id="@+id/btn_complete_register"
+                android:layout_width="240dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="38dp"
+                android:background="@drawable/btn_login_selected"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/btn_complete_register"
+                android:textColor="@color/color_ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

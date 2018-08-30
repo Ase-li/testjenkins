@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RadioGroup
+        android:id="@+id/rg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ffffff"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="6dp">
+
+        <RadioButton
+            android:id="@+id/rb_tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/select_tab1"
+            android:gravity="center_horizontal"
+            android:text="首页"
+            android:textColor="@color/tv_tabtitle_selector"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/select_tab2"
+            android:gravity="center_horizontal"
+            android:text="投资"
+            android:textColor="@color/tv_tabtitle_selector"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_tab3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/select_tab3"
+            android:gravity="center_horizontal"
+            android:text="发现"
+            android:textColor="@color/tv_tabtitle_selector"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_tab4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/select_tab4"
+            android:gravity="center_horizontal"
+            android:text="我的"
+            android:textColor="@color/tv_tabtitle_selector"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_bottom" />
+</RelativeLayout>

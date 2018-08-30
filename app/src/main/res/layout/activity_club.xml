@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+    <include layout="@layout/include_title_bar" />
+
+    <TextView
+        android:id="@+id/tv_vip_apply"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_apply_vip"
+        android:gravity="center"
+        android:text="VIP投资人申请"
+        android:enabled="false"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/txt_18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="48dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="25dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/img_zxjlb_bj"
+                android:paddingEnd="35dp"
+                android:paddingStart="35dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@mipmap/bg_club_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="32dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="78dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="尊享俱乐部是什么？"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/txt_15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="尊享俱乐部是56金服为用户打造的一个VIP投资人 社区，在尊享俱乐部，VIP投资人们不仅可以赚取 额外的佣金，同时还可以丰富投资知识，提升个人 财商，享受更自由的投资生活。"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/txt_12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="如何成为VIP投资人？"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/txt_15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="完成学员、精英、导师三个任务即可申请成为VIP 投资人。"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/txt_12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="VIP投资人有什么好处？"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/txt_15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="成为VIP投资人即可享受（本人+邀请好友）的投 资总金额年化0.6%的佣金。"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/txt_12sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_condition1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="67dp"
+                    android:src="@mipmap/icon_zxjlb_001" />
+
+                <TextView
+                    android:id="@+id/tv_condition1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="72dp"
+                    android:text="邀请5个好友注册并开通存管"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/txt_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_condition2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="67dp"
+                    android:src="@mipmap/icon_zxjlb_002" />
+
+                <TextView
+                    android:id="@+id/tv_condition2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="72dp"
+                    android:text="已注册56金服三个月以上"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/txt_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_condition3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="67dp"
+                    android:src="@mipmap/icon_zxjlb_003" />
+
+                <TextView
+                    android:id="@+id/tv_condition3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="72dp"
+                    android:text="本人及邀请好友日均在持10万以上"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/txt_14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

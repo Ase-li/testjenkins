@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.CashRedEnvelopeFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/gray_point"
+            android:text="@string/total_plus_interest"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/txt_14sp" />
+
+        <TextView
+            android:id="@+id/tv_increase_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/gray_point"
+            android:drawablePadding="10dp"
+            android:text="0元"
+            android:textColor="@color/color_ff4e03"
+            android:textSize="@dimen/txt_14sp" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_refresh_load_recyclerview" />
+</LinearLayout>

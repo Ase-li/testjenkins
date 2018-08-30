@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/color_ffffff"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/btn_risk_control"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_sy_fxkz" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="风险管理"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/txt_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_information_disclosure"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_sy_xxpl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="信息披露"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/txt_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_invite_reward"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_sy_yqyl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="邀请有礼"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/txt_12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_my_message"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_info"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/icon_sy_wdxx" />
+
+        <TextView
+            android:id="@+id/tv_info_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-10dp"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/iv_info"
+            android:background="@drawable/bg_grzx_msg_count"
+            android:gravity="center"
+            android:minHeight="13dp"
+            android:minWidth="13dp"
+            android:paddingEnd="3.5dp"
+            android:paddingStart="3.5dp"
+            android:text=""
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/txt_10sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="我的消息"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/txt_12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

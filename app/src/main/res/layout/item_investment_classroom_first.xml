@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginBottom="1dp"
+    android:background="@color/color_ffffff">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img_sy_banner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_00000050"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_classroom_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="儿童节大放送"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/txt_14sp" />
+
+        <TextView
+            android:id="@+id/tv_classroom_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="2010.01.12"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/txt_11sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

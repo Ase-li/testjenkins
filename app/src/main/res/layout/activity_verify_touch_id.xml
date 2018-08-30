@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.personCenter.VerifyTouchIdActivity">
+
+    <include layout="@layout/include_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_touch"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:src="@mipmap/icon_yzzw_zw" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_touch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/safe_click_touch_id"
+            android:textColor="@color/color_ff4e03"
+            android:textSize="@dimen/txt_14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_switch_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/safe_switch_account"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+
+            <TextView
+                android:id="@+id/tv_password_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/safe_password_login"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

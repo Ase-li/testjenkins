@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp">
+
+    <include layout="@layout/item_invest_in_group" />
+
+    <LinearLayout
+        android:id="@+id/ll_trans_verify_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/color_ff4e03" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/color_ffffff"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日转让结算利率"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+
+            <TextView
+                android:id="@+id/tv_settled_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="9.00%"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/color_ffffff"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="转让手续费率"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+
+            <TextView
+                android:id="@+id/tv_procedure_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="限时免费"
+                android:textColor="@color/color_3ed2b1"
+                android:textSize="@dimen/txt_12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/color_ffffff"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投资时间"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+
+            <TextView
+                android:id="@+id/tv_invest_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2018年04月28日"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/color_ffffff"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前债转排队订单"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+
+            <TextView
+                android:id="@+id/tv_queue_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="45"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:visibility="gone"
+            android:background="@color/color_ffffff"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预计转让时间"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+
+            <TextView
+                android:id="@+id/tv_predict_trans_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="12小时"
+                android:textColor="@color/color_3ed2b1"
+                android:textSize="@dimen/txt_12sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

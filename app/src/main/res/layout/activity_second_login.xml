@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/app_main_black">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/login_start_check"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/login_close"
+            android:textColor="@color/color_ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp"
+        android:background="@mipmap/img_ksyz_bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/btn_check_login"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="登录手机号码："
+            android:textColor="@color/color_333333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/btn_change_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:text="@string/login_change"
+            android:textColor="@color/color_ff4e03"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_password_login"
+        android:layout_width="278dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_second_login_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_szmm_mm" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_999999" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="@string/please_input_password"
+            android:inputType="textWebPassword"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_cccccc"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_captcha" />
+
+    <include layout="@layout/layout_confirm" />
+</LinearLayout>

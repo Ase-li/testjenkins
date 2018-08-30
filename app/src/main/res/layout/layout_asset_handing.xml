@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_look_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:visibility="gone"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_handing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/txt_11sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击查看"
+        android:textColor="@color/color_ff4e03"
+        android:textSize="@dimen/txt_11sp" />
+</LinearLayout>

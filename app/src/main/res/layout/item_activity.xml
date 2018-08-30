@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="26.5dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/tv_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新春欢乐行"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/txt_12sp" />
+
+        <TextView
+            android:id="@+id/tv_activity_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:text="2018.03.03"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/txt_11sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_activity_icon"
+        android:layout_width="340dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="26dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_sy_banner" />
+</LinearLayout>

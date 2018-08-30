@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/bg_white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        app:contentPaddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:src="@mipmap/icon_wdtz_yhk" />
+
+        <LinearLayout
+            android:id="@+id/ll_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="6dp"
+                android:paddingLeft="17.5dp"
+                android:paddingTop="8dp">
+
+                <CheckBox
+                    android:id="@+id/cb_select"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/selector_trans"
+                    android:button="@null"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_debt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/cb_select"
+                    android:text=""
+                    android:textColor="#FF666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_hint1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/tv_debt_name"
+                    android:background="@drawable/invest_in_item_background"
+                    android:paddingBottom="1dp"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp"
+                    android:paddingTop="1dp"
+                    android:text=""
+                    android:textColor="@color/invest_in_item_debt_txt"
+                    android:textSize="@dimen/txt_10sp" />
+
+                <TextView
+                    android:id="@+id/tv_hint2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_hint1"
+                    android:layout_alignTop="@+id/tv_hint1"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/tv_hint1"
+                    android:background="@drawable/invest_in_item_background"
+                    android:paddingBottom="1dp"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp"
+                    android:paddingTop="1dp"
+                    android:text=""
+                    android:textColor="@color/invest_in_item_debt_txt"
+                    android:textSize="@dimen/txt_10sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_e6e6e6" />
+
+            <RelativeLayout
+                android:id="@+id/ll_to_invest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_possess_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17.5dp"
+                    android:layout_marginTop="6dp"
+                    android:text=""
+                    android:textColor="@color/gray_yellow_txtcolor"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_money_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_possess_money"
+                    android:layout_marginStart="2dp"
+                    android:layout_toEndOf="@+id/tv_possess_money"
+                    android:paddingBottom="6dp"
+                    android:text="元"
+                    android:textColor="@color/gray_yellow_txtcolor"
+                    android:textSize="@dimen/txt_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_possess_money_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tv_possess_money"
+                    android:layout_below="@+id/tv_possess_money"
+                    android:layout_marginTop="0.5dp"
+                    android:text="持有金额"
+                    android:textColor="@color/color_999999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_year_rate_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_possess_money_hint"
+                    android:layout_marginStart="120dp"
+                    android:text="协议约定年化"
+                    android:textColor="@color/color_999999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_year_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_year_rate_hint"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/tv_year_rate_hint"
+                    android:text=""
+                    android:textColor="@color/color_333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_other_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_year_rate"
+                    android:layout_marginStart="2dp"
+                    android:layout_toEndOf="@+id/tv_year_rate"
+                    android:text=""
+                    android:textColor="@color/color_ff4e03"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_accumulated_income_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_year_rate_hint"
+                    android:layout_alignEnd="@+id/tv_year_rate_hint"
+                    android:layout_marginBottom="10dp"
+                    android:text="累计收益"
+                    android:textColor="@color/color_999999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_accumulated_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_accumulated_income_hint"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/tv_accumulated_income_hint"
+                    android:maxWidth="100dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/invest_debt_list_end"
+                    android:textSize="@dimen/txt_18sp" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_accumulated_income"
+                    android:layout_alignBottom="@+id/tv_accumulated_income"
+                    android:layout_marginStart="7dp"
+                    android:layout_toEndOf="@+id/tv_accumulated_income"
+                    android:text="元"
+                    android:textColor="@color/invest_debt_list_end"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:paddingEnd="18dp"
+                android:paddingStart="18dp">
+
+                <ProgressBar
+                    android:id="@+id/pb_progress"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="8dp"
+                    android:max="100"
+                    android:paddingEnd="17.5dp"
+                    android:paddingLeft="17.5dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progressbar_background" />
+
+                <LinearLayout
+                    android:id="@+id/ll_progress_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_progress_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/invest_slider_background"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:text="投资日"
+                        android:textColor="@color/gray_yellow_txtcolor"
+                        android:textSize="@dimen/txt_9sp" />
+
+                    <TextView
+                        android:id="@+id/tv_progress_time_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text=""
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/txt_9sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_progress_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_progress_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/invest_slider_background"
+                        android:enabled="false"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:text="放款日"
+                        android:textColor="@color/gray_yellow_txtcolor"
+                        android:textSize="@dimen/txt_9sp" />
+
+                    <TextView
+                        android:id="@+id/tv_progress_time_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text=""
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/txt_9sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_progress_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="175dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_progress_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/invest_slider_background"
+                        android:enabled="false"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:text="投资天数"
+                        android:textColor="@color/gray_yellow_txtcolor"
+                        android:textSize="@dimen/txt_9sp" />
+
+                    <TextView
+                        android:id="@+id/tv_progress_time_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text=""
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/txt_9sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_progress_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_progress_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/invest_slider_background"
+                        android:enabled="false"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:text="到期日"
+                        android:textColor="@color/gray_yellow_txtcolor"
+                        android:textSize="@dimen/txt_9sp" />
+
+                    <TextView
+                        android:id="@+id/tv_progress_time_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text=""
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/txt_9sp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

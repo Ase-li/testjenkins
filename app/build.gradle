@@ -1,0 +1,129 @@
+apply plugin: 'com.android.application'
+// 依赖插件脚本
+apply from: 'tinker-support.gradle'
+// 多渠道使用walle（注：多渠道使用）
+apply from: 'multiple-channel.gradle'
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.chd.chd56lc"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+            //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'h
+        }
+        if (isBuildDebug.toBoolean()) {
+            //私人的
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "adf7a9b0ffbb61aa6db147a6", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+                    UMENG_APPKEY : "5aa0acbef29d980b2e0000a1",//友盟
+                    qqappid      : ""
+            ]
+        } else {
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "690f40bc17af78183a258e8d", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+                    UMENG_APPKEY : "57736218e0f55a0546002210",
+                    qqappid      : ""
+            ]
+        }
+    }
+    sourceSets {
+        main {
+            resources.srcDirs = ['src/main/res', 'src/main/res/layouts/base']
+            assets.srcDirs = ['assets']
+        }
+    }
+    signingConfigs {
+        release {
+            keyAlias "56lc"
+            keyPassword "212313"
+            storeFile file('keyton')
+            storePassword "212313"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            signingConfig signingConfigs.release
+
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            signingConfig signingConfigs.release
+
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':touchidmodul')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation('com.android.support.test:runner:1.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support:multidex:1.0.1'
+    // 多dex配置
+    //注释掉原有bugly的仓库
+    // 指定tinker依赖版本（注：应用升级1.3.5版本起，不再内置tinker）
+    implementation 'com.tencent.tinker:tinker-android-lib:1.9.6'
+    implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    implementation 'com.meituan.android.walle:library:1.1.6'
+    implementation 'cn.jiguang.sdk:jpush:latest.release'
+    // 此处以JPush 3.1.1 版本为例。
+    implementation 'cn.jiguang.sdk:jcore:latest.release'
+    // 此处以JCore 1.1.9 版本为例。
+    implementation 'com.umeng.sdk:common:latest.integration'
+    implementation 'com.umeng.sdk:analytics:latest.integration'
+    implementation 'com.umeng.sdk:share-qq:latest.integration'
+    implementation 'com.umeng.sdk:share-wechat:latest.integration'
+    debugImplementation 'com.umeng.sdk:debug:latest.integration'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.14-RC1'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    implementation('com.jakewharton.rxbinding2:rxbinding:2.1.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.google.dagger:dagger:2.16'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.16'
+    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation files('libs/umeng-share-core-6.9.3.jar')
+}

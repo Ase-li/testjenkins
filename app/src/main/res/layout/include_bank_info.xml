@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iv_big_bank_icon"
+    android:layout_width="330dp"
+    android:layout_height="150dp"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:layout_marginTop="15dp"
+    android:background="@mipmap/img_tx_mr"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="****"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/asset_depository_binding"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_small_bank_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:src="@mipmap/icon_tx_mr" />
+
+        <TextView
+            android:id="@+id/tv_bank_info"
+            android:layout_width="wrap_content"
+            android:layout_height="33.5dp"
+            android:layout_alignStart="@+id/ll1"
+            android:layout_below="@+id/ll1"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/color_ffffff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_bind_bank"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/asset_depository_bind_card"
+            android:textColor="@color/color_fe6122"
+            android:textSize="@dimen/txt_12sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vw_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/color_b3b3b3" />
+
+    <TextView
+        android:id="@+id/tv_bank_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="7dp"
+        android:text=""
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/txt_12sp" />
+
+</LinearLayout>

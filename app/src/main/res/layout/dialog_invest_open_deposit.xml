@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/invest_dialog_base_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/person_open_depository_account"
+        android:textColor="@color/color_666666"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:src="@mipmap/img_ktcgzh_sryh" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/investment_open_deposit"
+        android:textColor="@color/color_333333"
+        android:textSize="10sp" />
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:background="@color/color_ffffff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/tv_friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张先生"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_12sp" />
+
+        <TextView
+            android:id="@+id/tv_status_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/tv_friend_name"
+            android:text="停止计提佣金"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_12sp" />
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_friend_name"
+            android:text="124****3256"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/txt_12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:text="2018.5.15 开户"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/txt_12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/windowBackground"/>
+</RelativeLayout>

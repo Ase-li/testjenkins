@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_dialog_bottom_6_radius"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/bg_dialog_title"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="存管对接停服公告"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/txt_22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:layout_marginTop="25dp"
+        android:lineSpacingExtra="5dp"
+        android:paddingEnd="33dp"
+        android:paddingStart="33dp"
+        android:text="亲爱的用户，您的账户正在进行上饶银行存管迁移，在迁移完成之前将暂停相关服务，敬请谅解。 "
+        android:textColor="@color/color_808080"
+        android:textSize="@dimen/txt_10sp" />
+</LinearLayout>

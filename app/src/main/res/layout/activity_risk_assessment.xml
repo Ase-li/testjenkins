@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:src="@mipmap/icon_wckh_wc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/risk_assessment_hint1"
+        android:textColor="@color/color_999999"
+        android:textSize="15sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_d8d8d8" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/risk_assessment_hint2"
+        android:textColor="#FF999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/btn_begin_check"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/investment_btn_invest"
+        android:gravity="center"
+        android:text="开始测评"
+        android:textColor="@color/color_ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/btn_jump_check"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_risk_guard_type"
+        android:gravity="center"
+        android:text="我是保守型，跳过评测"
+        android:textColor="@color/color_ffffff"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NewTwoSideTextView">
+        <attr name="backgroundDrawable1" format="color|reference" />
+        <attr name="descText1" format="string" />
+        <attr name="valueText1" format="string" />
+        <attr name="valueHintText1" format="string" />
+        <attr name="valueHintTextColor1" format="color" />
+        <attr name="descDrawablePadding1" format="dimension" />
+        <attr name="descLeftIcon1" format="reference" />
+        <attr name="descRightIcon1" format="reference" />
+        <attr name="showRightArrow1" format="boolean" />
+        <attr name="setDescTextSize1" format="dimension" />
+        <attr name="setDescTextColor1" format="color|reference" />
+        <attr name="setValueTextSize1" format="dimension" />
+        <attr name="setValueTextColor1" format="color|reference" />
+        <attr name="setValueTextMarginRight" format="dimension" />
+        <attr name="valueDrawablePadding1" format="dimension" />
+        <attr name="valueLeftIcon1" format="reference" />
+        <attr name="valueRightIcon1" format="reference" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="contentGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="center" value="0x11" />
+            <flag name="center_horizontal" value="0x01" />
+        </attr>
+        <attr name="valueTextGravity1">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="center" value="0x11" />
+            <flag name="center_horizontal" value="0x01" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ConvenientBanner">
+        <attr name="canLoop" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MyProgressBar">
+        <attr name="bottomLineColor" format="reference|color" />
+        <attr name="topLineColor" format="reference|color" />
+        <attr name="bottomLineSize" format="dimension" />
+        <attr name="topLineSize" format="dimension" />
+    </declare-styleable>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">13sp</item>
+    </style>
+</resources>

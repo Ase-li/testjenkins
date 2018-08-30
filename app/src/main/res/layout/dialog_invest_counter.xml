@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_dialog_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@mipmap/icon_login_clean" />
+
+    <RelativeLayout
+        android:id="@+id/fl_invest_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/invest_dialog_base_content">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="11.5dp"
+            android:text="@string/counter_earn_counter"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/txt_14sp" />
+
+        <TextView
+            android:id="@+id/tv_year_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:text="@string/counter_expected_yield"
+            android:textColor="@color/color_ff4e03"
+            android:textSize="@dimen/txt_9sp" />
+
+        <View
+            android:id="@+id/vw1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="10dp"
+            android:background="#FFD8D8D8" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vw1"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/counter_investment_amount"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/txt_12sp" />
+
+        <ImageView
+            android:id="@+id/iv_subtract"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/tv2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/btn_tzy_jian" />
+
+        <ImageView
+            android:id="@+id/iv_plus"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv2"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/btn_tzy_jia" />
+
+        <EditText
+            android:id="@+id/et_invest_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_subtract"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/iv_plus"
+            android:layout_toEndOf="@+id/iv_subtract"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:maxLength="7"
+            android:text="0"
+            android:textColor="#FF4D4D4D"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/iv_plus"
+            android:layout_marginTop="23dp"
+            android:background="@mipmap/img_deposit_line" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_plus"
+            android:layout_marginTop="32.5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+
+                android:text="@string/counter_expected_earn"
+                android:textColor="#FF666666"
+                android:textSize="@dimen/txt_11sp" />
+
+            <TextView
+                android:id="@+id/tv_total_earn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text=""
+                android:textColor="@color/color_ff4e03"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="@string/counter_hint"
+            android:textColor="@color/color_cccccc"
+            android:textSize="@dimen/txt_9sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/btn_dialog_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/invest_dialog_base_confirm"
+        android:gravity="center"
+        android:text="@string/counter_for_amount"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/txt_14sp" />
+</LinearLayout>

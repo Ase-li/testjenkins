@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windowBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@drawable/bg_gradual_blue"
+        android:gravity="center"
+        android:text="@string/asset_withdraw_hint"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/txt_22sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/color_ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:text="实际到账金额"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="18dp"
+            android:text=""
+            android:textColor="@color/color_ff4e03"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/color_ffffff"
+        android:paddingEnd="18dp"
+        android:paddingStart="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/asset_withdrawal_charge"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+
+
+            <TextView
+                android:id="@+id/tv_tixian_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/color_ff4e03"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_tixian_fee_plan"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="3dp"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <RelativeLayout
+        android:id="@+id/rl_withdraw_arch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_ffffff">
+
+        <TextView
+            android:id="@+id/tv_withdraw_arch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:text="@string/asset_carry_cash"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_coupon_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/tv_withdraw_arch"
+            android:text=""
+            android:textColor="@color/color_3ed2b1"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/cb_tanchuang_select"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/selector_trans"
+            android:button="@null" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/windowBackground" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/tv_rule1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/asset_withdraw_rules"
+            android:textColor="@color/color_666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rule1"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/asset_withdraw_rule1"
+            android:textColor="@color/color_666666"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_withdrawals"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_rule"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/investment_btn_invest"
+            android:gravity="center"
+            android:text="@string/asset_continue_withdraw"
+            android:textColor="@color/color_ffffff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_withdrawals"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="本月还有"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_free_withdrawals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/tv1"
+                android:text="100次"
+                android:textColor="@color/color_ff4e03"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/tv_free_withdrawals"
+                android:text="免费提现"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

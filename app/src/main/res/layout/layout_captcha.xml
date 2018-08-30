@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_verification_code"
+    android:layout_width="278dp"
+    android:layout_height="40dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/login_second_login_background"
+    android:paddingLeft="19dp"
+    android:paddingRight="19dp"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/tv_get_verify_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/login_send_verify"
+        android:textColor="@color/color_999999"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_verification_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:background="@null"
+        android:hint="@string/login_input_verify"
+        android:inputType="number"
+        android:maxLength="6"
+        android:layout_toLeftOf="@+id/tv_get_verify_code"
+        android:singleLine="true"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_cccccc"
+        android:textSize="14sp" />
+
+    <View
+       android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/tv_get_verify_code"
+        android:background="@color/color_999999" />
+
+</RelativeLayout>

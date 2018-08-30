@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.investment.InvestTransferableActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_666666">
+
+        <CheckBox
+            android:id="@+id/cb_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="21dp"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/selector_trans"
+            android:text="@string/transfer_check_all"
+            android:textColor="@color/color_ffffff" />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:background="@drawable/btn_next"
+            android:gravity="center"
+            android:text="@string/investment_trans_next"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <com.chd.chd56lc.widget.NewTwoSideTextView
+        android:id="@+id/ntv_total_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        app:backgroundDrawable1="@color/color_ffffff"
+        app:descText1="@string/total_transfer_amount"
+        app:setDescTextColor1="@color/color_333333"
+        app:setDescTextSize1="@dimen/txt_14sp"
+        app:setValueTextColor1="@color/color_ff4e03"
+        app:setValueTextSize1="@dimen/txt_14sp"
+        app:valueText1="0元" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ntv_total_money"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title_bar" />
+
+        <include
+            layout="@layout/layout_refresh_load_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.activity.investment.InvestmentTransVerifyActivity">
+
+    <TextView
+        android:id="@+id/tv_verify_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_next"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/investment_confirm_transfer"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/txt_18sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_agree_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_verify_transfer"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp">
+
+        <CheckBox
+            android:id="@+id/cb_agree_protocol"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/selector_trans"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/tv_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/cb_agree_protocol"
+            android:text="@string/agree_assignment_of_claims"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_agree_protocol"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title_bar" />
+
+        <include layout="@layout/layout_refresh_load_recyclerview" />
+
+    </LinearLayout>
+
+</RelativeLayout>

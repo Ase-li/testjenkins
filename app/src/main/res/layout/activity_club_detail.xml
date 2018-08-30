@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.circum.ClubDetailActivity">
+
+    <include layout="@layout/include_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:paddingBottom="9dp"
+        android:paddingStart="30dp">
+
+        <TextView
+            android:id="@+id/tv_vip_introduce"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_vip_introduce"
+            android:gravity="center"
+            android:text="VIP投资人介绍"
+            android:textColor="@color/color_ff4e03"
+            android:textSize="@dimen/txt_12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_total_Commission_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="累计佣金收益（元）"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/txt_14sp" />
+
+        <TextView
+            android:id="@+id/tv_total_Commission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_total_Commission_hint"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/color_ff1f1f"
+            android:textSize="@dimen/txt_32sp" />
+
+        <TextView
+            android:id="@+id/tv_next_earn_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_total_Commission"
+            android:layout_marginTop="15dp"
+            android:text="下期预计收益"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_12sp" />
+
+        <TextView
+            android:id="@+id/tv_next_earn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_next_earn_hint"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/txt_18sp" />
+
+        <View
+            android:id="@+id/vw_center"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/tv_next_earn"
+            android:layout_centerHorizontal="true"
+            android:background="@color/color_d8d8d8" />
+
+        <TextView
+            android:id="@+id/tv_current_invest_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_next_earn_hint"
+            android:layout_marginStart="45dp"
+            android:layout_toRightOf="@+id/vw_center"
+            android:text="当前日均在持资金"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_12sp" />
+
+        <TextView
+            android:id="@+id/tv_current_invest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_current_invest_hint"
+            android:layout_below="@+id/tv_next_earn_hint"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/txt_18sp" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tb_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_ffffff"
+        app:tabBackground="@color/color_ffffff"
+        app:tabIndicatorColor="@color/color_ee852a"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/color_ee852a"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/color_333333" />
+
+    <com.chd.chd56lc.widget.MyViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tb_content"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

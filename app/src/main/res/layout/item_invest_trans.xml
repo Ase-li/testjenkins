@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/bg_white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        app:contentPaddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="26dp"
+            android:src="@mipmap/investment_full_bid"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.5dp"
+                android:paddingTop="7.5dp">
+
+                <TextView
+                    android:id="@+id/tv_debt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="债权转让"
+                    android:textColor="#FF666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_hint1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="17dp"
+                    android:layout_toEndOf="@+id/tv_debt_name"
+                    android:background="@drawable/invest_item_debt_background"
+                    android:paddingBottom="0.5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="0.5dp"
+                    android:text=""
+                    android:textColor="@color/invest_item_debt_txt"
+                    android:textSize="@dimen/txt_10sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_cancel_trans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/invest_item_cancel_background"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="3dp"
+                    android:text="取消转让"
+                    android:textColor="@color/color_ff1f1f"
+                    android:textSize="@dimen/txt_10sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_e6e6e6" />
+
+            <LinearLayout
+                android:id="@+id/ll_to_invest"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginStart="18dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_possess_money_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0.5dp"
+                        android:text="持有金额"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/txt_11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_possess_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_possess_money_hint"
+                        android:layout_marginTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:text="10000,00元"
+                        android:textColor="@color/invest_item_debt_txt"
+                        android:textSize="@dimen/txt_24sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_transferred_amount_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:text="已转让金额"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/txt_11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_transferred_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_transferred_amount_hint"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="10dp"
+                        android:maxWidth="100dp"
+                        android:singleLine="true"
+                        android:text="20,0000元"
+                        android:textColor="@color/invest_debt_list_end"
+                        android:textSize="@dimen/txt_18sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_progress"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbar_background" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余转让天数 5天"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/txt_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_transferred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="剩余转让天数 5天"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/txt_12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

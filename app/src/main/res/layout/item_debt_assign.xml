@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/bg_white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        app:contentPaddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="26dp"
+            android:src="@mipmap/investment_full_bid"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.5dp"
+                android:paddingStart="17.5dp"
+                android:paddingTop="7.5dp">
+
+                <TextView
+                    android:id="@+id/tv_debt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product_zqzr"
+                    android:textColor="#FF666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_hint1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="17dp"
+                    android:layout_toEndOf="@+id/tv_debt_name"
+                    android:background="@drawable/invest_item_debt_background"
+                    android:paddingBottom="0.5dp"
+                    android:paddingEnd="3dp"
+                    android:paddingStart="3dp"
+                    android:paddingTop="0.5dp"
+                    android:text=""
+                    android:textColor="@color/invest_item_debt_txt"
+                    android:textSize="@dimen/txt_10sp" />
+
+                <TextView
+                    android:id="@+id/tv_hint2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/tv_hint1"
+                    android:background="@drawable/invest_item_debt_background"
+                    android:paddingBottom="0.5dp"
+                    android:paddingEnd="3dp"
+                    android:paddingStart="3dp"
+                    android:paddingTop="0.5dp"
+                    android:text=""
+                    android:textColor="@color/invest_item_debt_txt"
+                    android:textSize="@dimen/txt_10sp" />
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:drawableEnd="@mipmap/btn_grzx_rightarrow"
+                    android:drawablePadding="5dp"
+                    android:text="@string/product_detail"
+                    android:textColor="@color/color_666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_e6e6e6" />
+
+            <RelativeLayout
+                android:id="@+id/ll_to_invest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_year_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17.5dp"
+                    android:layout_marginTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:text=""
+                    android:textColor="@color/invest_item_debt_txt"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tv_year_rate_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tv_year_rate"
+                    android:layout_below="@+id/tv_year_rate"
+                    android:layout_marginTop="0.5dp"
+                    android:text="@string/product_expected_year_rate"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/txt_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_date_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_year_rate_hint"
+                    android:layout_marginStart="40dp"
+                    android:layout_toEndOf="@+id/tv_year_rate_hint"
+                    android:text="@string/product_expire_time"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/txt_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_limit_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_date_hint"
+                    android:layout_marginStart="12.5dp"
+                    android:layout_toEndOf="@+id/tv_date_hint"
+                    android:text=""
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/txt_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_remain_money_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_date_hint"
+                    android:layout_alignStart="@+id/tv_date_hint"
+                    android:layout_marginBottom="8.5dp"
+                    android:text="@string/product_able_cast_money"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/txt_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_remain_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_remain_money_hint"
+                    android:layout_marginStart="12.5dp"
+                    android:layout_toEndOf="@+id/tv_remain_money_hint"
+                    android:ellipsize="marquee"
+                    android:maxWidth="100dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/invest_debt_list_end"
+                    android:textSize="@dimen/txt_24sp" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_remain_money"
+                    android:layout_alignBottom="@+id/tv_remain_money"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/tv_remain_money"
+                    android:text="@string/product_unit_rmb"
+                    android:textColor="@color/invest_debt_list_end"
+                    android:textSize="@dimen/txt_12sp" />
+
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_progress"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="8dp"
+                android:max="100"
+                android:paddingEnd="17.5dp"
+                android:paddingStart="17.5dp"
+                android:progress="20"
+                android:progressDrawable="@drawable/progressbar_background" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

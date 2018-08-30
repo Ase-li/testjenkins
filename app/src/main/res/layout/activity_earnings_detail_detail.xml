@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_nodata"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/pic_no_data" />
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="暂无收益记录"
+            android:textColor="@color/color_999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sl_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lly_income_trend"
+                android:layout_width="match_parent"
+                android:layout_height="213dp"
+                android:background="@color/bg_white"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/asset_year_rate1"
+                    android:textColor="@color/color_999999"
+                    android:textSize="12sp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="22dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="26dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_assign_debt"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_next"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="协议约定年化利率："
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_year_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/tv_1"
+                    android:text="8%"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="32sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:text="历史收益明细"
+                android:textColor="@color/color_333333"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/windowBackground" />
+
+            <com.chd.chd56lc.widget.ScrollListView
+                android:id="@+id/lv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:divider="@color/color_cccccc" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

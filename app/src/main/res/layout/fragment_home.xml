@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/color_ffffff"
+            android:gravity="center"
+            android:text="@string/main_home"
+            android:textColor="@color/color_333333"
+            android:textSize="18sp" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/first_page_banner_height">
+
+                        <com.chd.chd56lc.widget.convenientbanner.ConvenientBanner
+                            android:id="@+id/vp_civilized_class"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:canLoop="true" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/ui_select_bar" />
+
+                    <include
+                        layout="@layout/ui_account_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/color_ffffff"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="1.5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/icon_grzx_vw_lift" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginStart="5dp"
+                                android:text="@string/main_hot_recommend"
+                                android:textColor="@color/color_333333"
+                                android:textSize="@dimen/txt_12sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/icon_grzx_vw_right" />
+
+                        </LinearLayout>
+
+                        <include layout="@layout/item_debt_assign" />
+
+                        <TextView
+                            android:id="@+id/btn_invest"
+                            android:layout_width="200dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="13dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_invest"
+                            android:gravity="center"
+                            android:text="@string/main_invest_immediate"
+                            android:textColor="@color/color_ffffff"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:drawableLeft="@mipmap/icon_sy_aq"
+                        android:drawablePadding="5dp"
+                        android:text="@string/main_invest_hint"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/txt_11sp" />
+
+                    <TextView
+                        android:id="@+id/btn_customer_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="22dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/btn_account_status_background"
+                        android:paddingBottom="1.5dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="1.5dp"
+                        android:text="@string/main_consult_customer"
+                        android:textColor="@color/color_ff4e03"
+                        android:textSize="@dimen/txt_11sp" />
+                </LinearLayout>
+            </ScrollView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+    <com.chd.chd56lc.widget.FloatWindowImageView
+        android:id="@+id/fiv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="300dp"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone" />
+</RelativeLayout>

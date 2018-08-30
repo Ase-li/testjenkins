@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.base.ProjectFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/btn_invest_wy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_invest_wy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="无忧标"
+                android:textColor="@color/color_ff4e03"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/vw_invest_wy"
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/color_ff4e03" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_invest_zqzr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_invest_zqzr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="债权转让"
+                android:textColor="#FF333333"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/vw_invest_zqzr"
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/color_ff4e03"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_ffffff"
+            android:paddingBottom="12dp"
+            android:paddingLeft="22dp"
+            android:paddingTop="12dp"
+            android:text="已为您优选下方订单，后续排队金额："
+            android:textColor="@color/color_999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_ffffff"
+            android:paddingBottom="12dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="12dp"
+            android:text="0元"
+            android:textColor="@color/invest_item_debt_txt"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/ui_pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

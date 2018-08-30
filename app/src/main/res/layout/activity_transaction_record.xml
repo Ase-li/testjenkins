@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.investment.TransactionRecordActivity">
+
+    <include layout="@layout/include_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.chd.chd56lc.widget.NewTwoSideTextView
+            android:id="@+id/ntv_trans_type"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="1dp"
+            app:backgroundDrawable1="@color/color_ffffff"
+            app:descText1="@string/investment_transfer_type"
+            app:setDescTextColor1="@color/color_666666"
+            app:setDescTextSize1="@dimen/txt_12sp"
+            app:setValueTextColor1="@color/color_333333"
+            app:setValueTextMarginRight="15dp"
+            app:setValueTextSize1="@dimen/txt_12sp"
+            app:valueText1="" />
+
+        <com.chd.chd56lc.widget.NewTwoSideTextView
+            android:id="@+id/ntv_trans_object"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="1dp"
+            app:backgroundDrawable1="@color/color_ffffff"
+            app:descText1="@string/investment_transfer_object"
+            app:setDescTextColor1="@color/color_666666"
+            app:setDescTextSize1="@dimen/txt_12sp"
+            app:setValueTextColor1="@color/color_333333"
+            app:setValueTextMarginRight="15dp"
+            app:setValueTextSize1="@dimen/txt_12sp"
+            app:valueText1="" />
+
+        <com.chd.chd56lc.widget.NewTwoSideTextView
+            android:id="@+id/ntv_trans_money"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="1dp"
+            app:backgroundDrawable1="@color/color_ffffff"
+            app:descText1="@string/investment_transfer_money"
+            app:setDescTextColor1="@color/color_666666"
+            app:setDescTextSize1="@dimen/txt_12sp"
+            app:setValueTextColor1="@color/color_ff4e03"
+            app:setValueTextMarginRight="15dp"
+            app:setValueTextSize1="@dimen/txt_12sp"
+            app:valueText1="" />
+
+        <com.chd.chd56lc.widget.NewTwoSideTextView
+            android:id="@+id/ntv_trans_time"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="1dp"
+            app:backgroundDrawable1="@color/color_ffffff"
+            app:descText1="@string/investment_transfer_time"
+            app:setDescTextColor1="@color/color_666666"
+            app:setDescTextSize1="@dimen/txt_12sp"
+            app:setValueTextColor1="@color/color_333333"
+            app:setValueTextMarginRight="15dp"
+            app:setValueTextSize1="@dimen/txt_12sp"
+            app:valueText1="" />
+
+        <com.chd.chd56lc.widget.NewTwoSideTextView
+            android:id="@+id/ntv_verify_time"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="1dp"
+            app:backgroundDrawable1="@color/color_ffffff"
+            app:descText1="@string/investment_verify_time"
+            app:setDescTextColor1="@color/color_666666"
+            app:setDescTextSize1="@dimen/txt_12sp"
+            app:setValueTextColor1="@color/color_333333"
+            app:setValueTextMarginRight="15dp"
+            app:setValueTextSize1="@dimen/txt_12sp"
+            app:valueText1="" />
+
+        <com.chd.chd56lc.widget.NewTwoSideTextView
+            android:id="@+id/ntv_trans_status"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="1dp"
+            app:backgroundDrawable1="@color/color_ffffff"
+            app:descText1="@string/investment_transfer_status"
+            app:setDescTextColor1="@color/color_666666"
+            app:setDescTextSize1="@dimen/txt_12sp"
+            app:setValueTextColor1="@color/color_3ed2b1"
+            app:setValueTextMarginRight="15dp"
+            app:setValueTextSize1="@dimen/txt_12sp"
+            app:valueText1="" />
+    </LinearLayout>
+</LinearLayout>

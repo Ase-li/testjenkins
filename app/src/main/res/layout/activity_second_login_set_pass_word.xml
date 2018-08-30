@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/base_view"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/login_set_password_hint"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_password_login"
+        android:layout_width="278dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/login_second_login_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_szmm_mm" />
+
+        <View
+           android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_999999" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:hint="@string/login_please_set_password"
+            android:inputType="textWebPassword"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_cccccc"
+            android:textSize="@dimen/txt_12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_check_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/hint_password_rule"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/txt_9sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_repassword_login"
+        android:layout_width="278dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/login_second_login_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_szmm_mm" />
+
+        <View
+           android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_999999" />
+
+        <EditText
+            android:id="@+id/et_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:hint="@string/input_input_password_again"
+            android:inputType="textWebPassword"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_cccccc"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_password_submit"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_login_selected"
+        android:gravity="center"
+        android:text="@string/btn_login"
+        android:textColor="@color/color_ffffff"
+        android:textSize="17sp" />
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.personCenter.LargeRechargeActivity">
+
+    <include layout="@layout/include_title_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2dp"
+        android:padding="20dp"
+        android:text="@string/asset_large_recharge"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/txt_12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+        android:paddingEnd="20dp"
+        android:paddingStart="25dp">
+
+        <TextView
+            android:id="@+id/tv_deposit_name_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="存管户名"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_12sp" />
+
+        <TextView
+            android:id="@+id/tv_deposit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@+id/tv_deposit_name_hint"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_deposit_name_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_copy"
+            android:paddingBottom="5dp"
+            android:paddingEnd="11dp"
+            android:paddingStart="11dp"
+            android:paddingTop="5dp"
+            android:text="复制"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+        android:paddingEnd="20dp"
+        android:paddingStart="25dp">
+
+        <TextView
+            android:id="@+id/tv_deposit_account_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="存管户名"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_12sp" />
+
+        <TextView
+            android:id="@+id/tv_deposit_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@+id/tv_deposit_account_hint"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_deposit_account_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_copy"
+            android:paddingBottom="5dp"
+            android:paddingEnd="11dp"
+            android:paddingStart="11dp"
+            android:paddingTop="5dp"
+            android:text="复制"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+        android:paddingEnd="20dp"
+        android:paddingStart="25dp">
+
+        <TextView
+            android:id="@+id/tv_deposit_bank_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="存管户名"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_12sp" />
+
+        <TextView
+            android:id="@+id/tv_deposit_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@+id/tv_deposit_bank_hint"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_deposit_bank_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_copy"
+            android:paddingBottom="5dp"
+            android:paddingEnd="11dp"
+            android:paddingStart="11dp"
+            android:paddingTop="5dp"
+            android:text="复制"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+        android:paddingEnd="20dp"
+        android:paddingStart="25dp">
+
+        <TextView
+            android:id="@+id/tv_deposit_balance_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="存管户名"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_12sp" />
+
+        <TextView
+            android:id="@+id/tv_deposit_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@+id/tv_deposit_balance_hint"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/tv_deposit_balance_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/btn_decz_sx" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_agree_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp">
+
+        <CheckBox
+            android:id="@+id/cb_agree_protocol"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/selector_trans"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/tv_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/cb_agree_protocol"
+            android:text="@string/agree_assignment_of_claims"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2dp"
+        android:padding="20dp"
+        android:text="@string/asset_large_recharge_hint"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/txt_11sp" />
+
+</LinearLayout>

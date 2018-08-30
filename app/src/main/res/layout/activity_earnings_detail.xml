@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/windowBackground"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@color/color_ffffff"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/asset_cumulative_profit"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/txt_14sp" />
+
+                <TextView
+                    android:id="@+id/tv_cumulative_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="51dp"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/color_f04056"
+                    android:textSize="@dimen/txt_32sp" />
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:drawableEnd="@mipmap/btn_grzx_rightarrow"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="明细"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/txt_12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/color_ffffff"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/asset_invest_profit"
+                        android:textColor="@color/color_333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_invest_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="@color/color_666666"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/vw_expect_earnings"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_d8d8d8" />
+
+                <LinearLayout
+                    android:id="@+id/ll_expect_earnings"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_expect_earnings_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:text="@string/asset_expected_profit"
+                        android:textColor="@color/color_ff4e03"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_expect_earnings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="@color/color_333333"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_ffffff"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text=""
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/txt_12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="180dp"
+                        android:text=""
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/txt_12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text=""
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/txt_12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="180dp"
+                        android:text=""
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/txt_12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text=""
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/txt_12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_text6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="180dp"
+                        android:text=""
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/txt_12sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_object_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/color_ffffff"
+                android:drawableEnd="@mipmap/btn_grzx_rightarrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="11dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="30dp"
+                android:paddingTop="11dp"
+                android:text="@string/object_detail"
+                android:textColor="@color/color_333333"
+                android:textSize="12sp" />
+
+            <com.chd.chd56lc.widget.ScrollListView
+                android:id="@+id/lv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/color_ffffff"
+                android:divider="@null"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

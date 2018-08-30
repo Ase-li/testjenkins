@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/include_layout_bank_info" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <CheckBox
+                    android:id="@+id/cb_select"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/investment_agree_bg"
+                    android:button="@null" />
+
+                <TextView
+                    android:id="@+id/tv_loan_contract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/cb_select"
+                    android:paddingRight="10dp"
+                    android:text="@string/recharge_invest_protocol"
+                    android:textColor="@color/color_999999"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_recharge_money"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="37dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/investment_btn_invest"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="确认充值"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+
+            <include layout="@layout/layout_asset_handing" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

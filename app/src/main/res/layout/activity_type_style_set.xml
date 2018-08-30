@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.personCenter.PushTypeSetActivity">
+
+    <include layout="@layout/include_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sms_style"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="短信"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_14sp" />
+
+        <ImageView
+            android:id="@+id/iv_sms_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/icon_jsfs_g"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_app_style"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APP推送"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_14sp" />
+
+        <ImageView
+            android:id="@+id/iv_app_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/icon_jsfs_g"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_wechat_style"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信推送"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_14sp" />
+
+        <ImageView
+            android:id="@+id/iv_wechat_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/icon_jsfs_g"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_email_style"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮件"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_14sp" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_toStartOf="@+id/iv_email_style"
+            android:textColor="@color/color_cccccc"
+            android:textSize="@dimen/txt_12sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_email_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/icon_jsfs_g"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

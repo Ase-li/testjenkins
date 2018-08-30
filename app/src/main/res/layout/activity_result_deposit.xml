@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <ImageView
+        android:id="@+id/iv_fail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="#FF999999"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="4000-8555-60"
+        android:textColor="#FFFF7E0E"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_back1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/investment_btn_invest"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="@color/color_ffffff"
+        android:textSize="16sp" />
+</LinearLayout>

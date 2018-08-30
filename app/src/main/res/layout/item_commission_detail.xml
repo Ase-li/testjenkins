@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/color_ffffff"
+        android:paddingStart="30dp">
+
+        <TextView
+            android:id="@+id/tv_Commission_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingEnd="14dp"
+            android:text="计提佣金"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_12sp" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="元"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+
+            <TextView
+                android:id="@+id/tv_commission_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_unit"
+                android:text="20,000"
+                android:textColor="@color/color_ff1f1f"
+                android:textSize="@dimen/txt_12sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tv_unit"
+                android:layout_below="@+id/tv_unit"
+                android:text="2018.04.11 15:59:12"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/txt_12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</LinearLayout>

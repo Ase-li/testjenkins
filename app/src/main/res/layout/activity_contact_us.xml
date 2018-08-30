@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.base.ContactUsActivity">
+
+    <include layout="@layout/include_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="42dp"
+                android:layout_marginTop="42dp"
+                android:src="@mipmap/img_lxwm_logo" />
+
+            <com.chd.chd56lc.widget.NewTwoSideTextView
+                android:id="@+id/ntv_official_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:backgroundDrawable1="@color/color_ffffff"
+                app:descText1="@string/contact_office_web"
+                app:setDescTextColor1="@color/color_666666"
+                app:setDescTextSize1="@dimen/txt_14sp"
+                app:setValueTextColor1="@color/color_666666"
+                app:setValueTextSize1="@dimen/txt_12sp"
+                app:valueText1="@string/office_web" />
+
+            <com.chd.chd56lc.widget.NewTwoSideTextView
+                android:id="@+id/ntv_company_tel_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:backgroundDrawable1="@color/color_ffffff"
+                app:descText1="@string/contact_server_phone"
+                app:setDescTextColor1="@color/color_666666"
+                app:setDescTextSize1="@dimen/txt_14sp"
+                app:setValueTextColor1="@color/color_666666"
+                app:setValueTextSize1="@dimen/txt_12sp"
+                app:valueText1="@string/server_phone" />
+
+            <com.chd.chd56lc.widget.NewTwoSideTextView
+                android:id="@+id/ntv_weChat_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:backgroundDrawable1="@color/color_ffffff"
+                app:descText1="@string/contact_weChat_official_account"
+
+                app:setDescTextColor1="@color/color_666666"
+                app:setDescTextSize1="@dimen/txt_14sp"
+                app:setValueTextColor1="@color/color_666666"
+                app:setValueTextSize1="@dimen/txt_12sp"
+                app:valueText1="@string/contact_wechat_official_account" />
+
+            <com.chd.chd56lc.widget.NewTwoSideTextView
+                android:id="@+id/ntv_sina_microblog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:visibility="gone"
+                app:backgroundDrawable1="@color/color_ffffff"
+                app:descText1="@string/contact_sina_blog"
+
+                app:setDescTextColor1="@color/color_666666"
+                app:setDescTextSize1="@dimen/txt_14sp"
+                app:setValueTextColor1="@color/color_666666"
+                app:setValueTextSize1="@dimen/txt_12sp"
+                app:valueText1="56金服" />
+
+            <com.chd.chd56lc.widget.NewTwoSideTextView
+                android:id="@+id/ntv_customer_service_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:backgroundDrawable1="@color/color_ffffff"
+                app:descText1="@string/contact_service_email"
+
+                app:setDescTextColor1="@color/color_666666"
+                app:setDescTextSize1="@dimen/txt_14sp"
+                app:setValueTextColor1="@color/color_666666"
+                app:setValueTextSize1="@dimen/txt_12sp"
+                app:valueText1="service@56p2b.com" />
+
+            <com.chd.chd56lc.widget.NewTwoSideTextView
+                android:id="@+id/ntv_business_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:backgroundDrawable1="@color/color_ffffff"
+                app:descText1="@string/contact_business_email"
+
+                app:setDescTextColor1="@color/color_666666"
+                app:setDescTextSize1="@dimen/txt_14sp"
+                app:setValueTextColor1="@color/color_666666"
+                app:setValueTextSize1="@dimen/txt_12sp"
+                app:valueText1="rongzi@56p2b.com" />
+
+            <com.chd.chd56lc.widget.NewTwoSideTextView
+                android:id="@+id/ntv_company_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:backgroundDrawable1="@color/color_ffffff"
+                app:descText1="@string/contact_company_address"
+
+                app:setDescTextColor1="@color/color_666666"
+                app:setDescTextSize1="@dimen/txt_14sp"
+                app:setValueTextColor1="@color/color_666666"
+                app:setValueTextSize1="@dimen/txt_12sp"
+                app:valueText1="广州市天河区粤垦路623号燕都商务大厦11楼" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

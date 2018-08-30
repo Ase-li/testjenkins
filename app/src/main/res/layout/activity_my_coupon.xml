@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.investment.MyCouponActivity">
+
+    <include layout="@layout/include_title_bar" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        style="@style/CustomTab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/title_bar_height"
+        app:tabBackground="@color/color_ffffff"
+        app:tabIndicatorColor="@color/color_ee852a"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/color_ee852a"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/color_333333" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tablayout"
+        android:fitsSystemWindows="true" />
+
+    <TextView
+        android:id="@+id/tv_use_record"
+        android:layout_width="35dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/background_coupon_use_status"
+        android:elevation="2dp"
+        android:ems="1"
+        android:gravity="center"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:text="使用记录"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/txt_12sp" />
+
+    <TextView
+        android:id="@+id/tv_is_out_time"
+        android:layout_width="35dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/background_coupon_use_status"
+        android:elevation="2dp"
+        android:ems="1"
+        android:gravity="center"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:text="已过期"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/txt_12sp" />
+</RelativeLayout>

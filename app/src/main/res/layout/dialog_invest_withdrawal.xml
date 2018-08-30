@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="14dp">
+
+    <ImageView
+        android:id="@+id/iv_dialog_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@mipmap/btn_xxhdrk_gb" />
+
+    <LinearLayout
+        android:id="@+id/fl_invest_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/invest_dialog_base_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_recharge_hint"
+            android:gravity="center"
+            android:padding="17dp"
+            android:text="@string/asset_withdraw_hint"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/txt_22sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/asset_real_money"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+
+            <TextView
+                android:id="@+id/tv_withdrawal_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text=""
+                android:textColor="@color/color_ff4e03"
+                android:textSize="@dimen/txt_12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/color_ffffff"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/asset_withdraw_procedure_fee"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+
+            <TextView
+                android:id="@+id/tv_withdrawal_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text=""
+                android:textColor="@color/color_ff4e03"
+                android:textSize="@dimen/txt_12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/color_ffffff"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/asset_carry_cash"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/txt_12sp" />
+
+            <CheckBox
+                android:id="@+id/tv_carry_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:button="@null"
+                android:drawableEnd="@drawable/selector_trans"
+                android:drawablePadding="6dp"
+                android:text=""
+                android:textColor="@color/color_ff4e03"
+                android:textSize="@dimen/txt_12sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/withdraw_rule_detail"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/txt_10sp" />
+
+        <TextView
+            android:id="@+id/tv_continue"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_login_selected"
+            android:gravity="center"
+            android:text="@string/asset_continue_carry"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/txt_14sp" />
+
+        <TextView
+            android:id="@+id/tv_surplus_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:text=""
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/txt_10sp" />
+    </LinearLayout>
+
+</LinearLayout>

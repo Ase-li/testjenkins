@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="gone">-->
+
+
+        <!--<com.github.mikephil.charting.charts.PieChart-->
+        <!--android:id="@+id/pc_asset_rate"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="220dp"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_total_asset"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="0"-->
+        <!--android:textColor="@color/color_333333"-->
+        <!--android:textSize="@dimen/txt_18sp" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:text="总资产"-->
+        <!--android:textColor="@color/color_666666"-->
+        <!--android:textSize="@dimen/txt_12sp" />-->
+
+        <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/img_zcfx_bj01"
+            android:paddingStart="30dp">
+
+            <TextView
+                android:id="@+id/tv_total_asset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="0"
+                android:textColor="@color/color_ffffff"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_total_asset"
+                android:layout_toRightOf="@+id/tv_total_asset"
+                android:text="@string/product_unit_rmb"
+                android:textColor="@color/color_ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_total_asset"
+                android:text="@string/person_total_assets"
+                android:textColor="@color/color_ffffff"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="18dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/bg_white_point"
+                        android:text="0元"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/txt_14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_amount"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/asset_hold_money"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/txt_12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_revenue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/bg_white_point"
+                        android:text="0元"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/txt_14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_revenue"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/asset_uncollected_revenue"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/txt_12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/bg_white_point"
+                        android:text="0元"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/txt_14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_balance"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/asset_user_balance"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/txt_12sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/asset_invest_direction"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/txt_14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/asset_month_capital_amount"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/txt_10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@mipmap/icon_zcfx_02"
+                    android:text="@string/asset_investment_volume"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/txt_10sp" />
+            </RelativeLayout>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lc_invest_trend"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_look_detail"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_coupon_use_status"
+            android:gravity="center"
+            android:text="@string/asset_check_detail"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_12sp" />
+
+    </LinearLayout>
+</ScrollView>

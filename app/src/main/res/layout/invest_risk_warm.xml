@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginTop="30dp"
+        android:text="1、政策风险"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginRight="17.5dp"
+        android:layout_marginTop="10dp"
+        android:text="      因宏观政策、财政政策、货币政策、监管导向、行业政策、地区发展政策等因素引起的风险。"
+        android:textColor="@color/color_999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginTop="20dp"
+        android:text="2、市场风险"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginRight="17.5dp"
+        android:layout_marginTop="10dp"
+        android:text="      因市场资金面紧张或利率波动、行业不景气、企业效益下滑等因素引起的风险。"
+        android:textColor="@color/color_999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginTop="20dp"
+        android:text="3、信用风险"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginRight="17.5dp"
+        android:layout_marginTop="10dp"
+        android:text="      资金出借期间，借款企业可能因自身原因或外部原因导致短期或长期丧失还款能力，或者借款企业的还款意愿发生改变，致使出借资金可能无法按时回收。"
+        android:textColor="@color/color_999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginTop="20dp"
+        android:text="4、技术风险"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginRight="17.5dp"
+        android:layout_marginTop="10dp"
+        android:text="      因不可预测或无法控制的系统故障、设备故障、电力故障、网络故障、黑客或计算机病毒攻击，以及其他因素，可能导致平台出现非正常运行或者瘫痪，由此导致您无法及时进行查询、充值、投资、提现等操作。"
+        android:textColor="@color/color_999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginTop="20dp"
+        android:text="5、不可抗力"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginRight="17.5dp"
+        android:layout_marginTop="10dp"
+        android:text="      因自然灾害、动乱、战争等不可抗力因素的出现而可能导致出借资金损失的风险。"
+        android:textColor="@color/color_999999"
+        android:textSize="10sp" />
+</LinearLayout>

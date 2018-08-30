@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7.5dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="7.5dp"
+        android:text="2018.05"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/txt_14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_ffffff">
+
+        <ImageView
+            android:id="@+id/iv_record_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="21dp"
+            android:src="@mipmap/icon_jyjl_sjt" />
+
+        <TextView
+            android:id="@+id/tv_record_type"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/txt_11sp"
+            android:layout_toRightOf="@+id/iv_record_icon"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/txt_14sp" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/btn_grzx_rightarrow" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/iv_right"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_trans_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text=""
+                android:textColor="@color/color_ff4e03"
+                android:textSize="@dimen/txt_14sp" />
+
+            <TextView
+                android:id="@+id/tv_trans_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/txt_11sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/windowBackground" />
+</LinearLayout>
